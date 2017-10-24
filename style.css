@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,700|Slabo+27px|Ubuntu');
+@import url(portfolio/fonts/font-awesome/css/font-awesome.min.css);
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+	margin:0;
+}
+
+
+/*----------HEAD-----------*/
+
+#title{
+  background: url(images/colorful-background.jpg) no-repeat center center; 
+  background-size: cover;
+  max-width:100%;
+  height:auto;
+ 
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+
+
+
+#title h2 em a {
+  color: #fff;
+  font-size:2em;
+  margin-top: 0;
+  text-decoration: none;
+  text-transform: uppercase; 
+  text-shadow: 2px 2px #000;
+  display: block;
+  box-sizing: border-box;
+
+}
+#subtitle {
+    font-size:22px;
+    color: #fff;
+    padding-bottom: 70px;
+    margin: 0
+}
+
+   #right {
+    text-align:right;
+    padding: 10px;
+    color:white;
+    visibility:hidden;
+}
+    
+.container{
+    padding-left: 40px;
+    padding-right: 40px;
+	box-sizing:border-box;
+	margin:0 auto;
+	max-width:1200px;
+}
+ol li{
+    padding-right: 40px;
+}
+/*---------NAV---------- */
+nav {
+    font-family: 'Slabo 27px', serif;
+    background-color: black;
+    height:auto;
+    box-sizing: border-box;
+}
+nav ul{
+	padding-left: 150px;
+    margin:0;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+nav li {
+  display: inline-block;
+}
+nav a, nav a:visited {
+	color: white;
+	text-decoration: none;
+    padding: 5px 20px;   
+}
+nav a:hover, nav .selected a {
+    background-color: yellow;
+	color: royalblue;
+    margin-right:0;
+    border-radius: 10px;
+}
+
+/*---------BODY------*/
+h1, h3,legend {
+  color: #66BB6A;
+  text-align: left;
+  font-weight: 100;
+}
+
+/*--------CONTACT FORM-------*/
+
+#mail, #DOB{
+ width:300px
+}
+.gender{
+  margin-left:30px;
+}
+  #message{
+    
+    border-width: 1px;
+ }
+input{
+	font-size: 1em;
+	padding: 10px;
+	max-width: 300px;
+}
+button, select{
+	font-size:1em;
+}
+textarea{
+ width:600px;
+ height:150px;
+ font-size: 1em
+}
+/*-I-FRAME in the Contact and Projects----*/
+iframe{
+width:900px;
+height:700px;
+}
+/*----------Photos in the About----------*/
+#paris{
+    height:auto;
+    width:100%;
+     padding:;
+    
+}
+#profile_pic{
+    height:255px;
+    width:195px; 
+    float: right;
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+/* NAVIGATION BOXES*/
+.box 
+{
+    border: 2px solid #000;
+    text-align:center;
+    border-radius: 20px;
+}
+.box h3 {
+    text-align: center;
+    text-decoration: none;
+    }
+
+.box:hover {
+    box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.45);
+}
+.box a{
+    color: black;
+    text-decoration: none;
+}
+.box i{
+    margin-bottom: 20px;
+}
+/*RESUME*/
+#resume{
+    border:4px black solid;
+    align-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+#resume h3, #resume li{
+    padding-left: 10px;
+}
+/* TITLE OF THE CV*/
+#cv{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* ------------- FOOTER ------------- */
+footer a, footer a:visited {
+    color: black;
+    text-decoration: none;
+}	
+footer{
+	text-align: center;
+}
+/* ------------- MEDIA Queries ------------- */
+
+@media screen and (min-width : 600px) {
+nav li {
+    display: inline-block;
+    }
+.box {
+    width:200px;
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
+}
+    
+    }
+@media screen and (min-width : 900px) {
+.box {
+    width:250px;
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
+}
+}
+@media screen and (max-width:500px) {
+     #resume{
+        margin:auto;
+}
+	nav li {
+    display:block;
+    }
+	.container, nav ul {
+    padding-left: 15px;
+	padding-right: 0;
+
+}
+	#profile_pic{
+		float:none;
+		padding-left:20px;
+		margin-left: 55px;
+	}
+	.box{
+		margin: 46px;
+	}
+	fieldset, textarea{
+		width:100%;
+		box-sizing: border-box;
+		margin-bottom: 40px;
+	}
+	iframe{
+		height:auto;
+	}
+}
